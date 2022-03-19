@@ -10,9 +10,11 @@
 <body>
     <h1>Pokedex LaunchX</h1>
     <div class="pokedex-container">
+        <h2>¿Qué pokémon deseas conocer?</h2>
         <input type="text" placeholder="pikachu" id="pokeName" class="pokeInput" /><br>
-        <img src="assets/pokeball.png" alt="pokedex" class="pokeImg"><br>
-        <button class="boton-fetch">Cambiar Pokémon</button>
+        <img src="assets/pokeball.png" alt="pokedex" class="pokeImg" id="pokeImg" />
+        <h3 class="pokeNombre" id="pokeNombre"></h3>
+        <button class="boton-fetch" onclick="fetchPokemon()">Cambiar Pokémon</button>
     </div>
 
 
