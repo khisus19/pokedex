@@ -16,16 +16,25 @@
 // fetchPokemon();
 
 // Función para que al pulsar el button tome el input ingresado:
-const imprimir = () => {
+/* const imprimir = () => {
     const pokeName = document.getElementById("pokeName");
     let pokeInput = pokeName.value;
     console.log("Hola " + pokeInput);
+} */
+// Función para mayúscula:
+function capitalizarPrimeraLetra(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
 }
-
 // Función para cambiar la imagen:
 const pokeImage = (url) => {
     const pokeImg = document.getElementById("pokeImg");
     pokeImg.src = url;
+}
+// Función para cambiar la nombre:
+const pokeNombre = (pokemon) => {
+    let nombre = capitalizarPrimeraLetra(pokemon);
+    document.getElementById("pokeNombre").innerHTML = `${nombre}`;
+    
 }
 
 // pokeImage("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png");
@@ -49,24 +58,32 @@ const fetchPokemon = () => {
             return res.json(); 
         }
     }).then((data) => {
-        console.log(data);
         //De la data traeremos la imagen y la ponemos en pokeImg
         let pokeImg = data.sprites.front_default;
         console.log(pokeImg);
         pokeImage(pokeImg); //Ejecuta la función para cambiar la imagen
-        let pokeNbr = data.name;
-        pokeNombre(pokeNbr);
+        // pokeNombre(pokeNbr);
+        let pokeNbr = data.name; 
+        let pokeId = data.id;
         let pokeTipo = data.types[0].type.name;
-        console.log(pokeTipo);
-        let pokeStats = data.stats[0].base_stat;
+        let tipo = capitalizarPrimeraLetra(pokeTipo);
+        
+
+        pokeNombre(pokeNbr);
+        document.getElementById("pokeNumero").innerHTML = `<b>#${pokeId}<b/>`;
+        document.getElementById("pokeTipo").innerHTML = `Tipo: <b>${tipo}<b/>`;
+        
+        let pokeStats = [data.stats[0].base_stat, data.stats[1].base_stat, data.stats[2].base_stat, data.stats[3].base_stat, data.stats[4].base_stat, data.stats[5].base_stat];
+        document.getElementById("stat1").innerHTML = `PS: ${pokeStats[0]}`;
+        document.getElementById("stat2").innerHTML = `Ataque: ${pokeStats[1]}`;
+        document.getElementById("stat3").innerHTML = `Defensa: ${pokeStats[2]}`;
+        document.getElementById("stat4").innerHTML = `Ataque especial: ${pokeStats[3]}`;
+        document.getElementById("stat5").innerHTML = `Defensa especial: ${pokeStats[4]}`;
+        document.getElementById("stat6").innerHTML = `Velocidad: ${pokeStats[5]}`;
+
         console.log(pokeStats);
         let movimientos = data.moves.map(mov => mov.move.name); 
         console.log(movimientos);
     })
 }
 
-// Función para cambiar la imagen:
-const pokeNombre = (url) => {
-    const pokeNbr = document.getElementById("pokeNombre");
-
-}

@@ -6,16 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex de LaunchX</title>
     <link rel="stylesheet" href="pokedex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Pokedex LaunchX</h1>
-    <div class="pokedex-container">
-        <h2>¿Qué pokémon deseas conocer?</h2>
-        <input type="text" placeholder="pikachu" id="pokeName" class="pokeInput" /><br>
-        <img src="assets/pokeball.png" alt="pokedex" class="pokeImg" id="pokeImg" />
-        <h3 class="pokeNombre" id="pokeNombre"></h3>
-        <button class="boton-fetch" onclick="fetchPokemon()">Cambiar Pokémon</button>
-    </div>
+    <section class="pokedex-container">
+        <div class="top">
+            <p class="luz-azul"></p>
+            <img src="assets/light-three.svg" alt="tres luces" class="luz-triple" id="luz-triple" />
+        </div>
+        <figure class="img-container">
+            <img src="assets/screen1.svg" alt="pokedex" class="screen1" id="screen1" />
+            <img src="assets/pokeball.png" alt="pokedex" class="pokeImg" id="pokeImg" />
+        </figure>
+        <div class="titulo">
+            <p class="pokeNumero" id="pokeNumero">#Id: </p>
+            <p class="pokeNombre" id="pokeNombre">Nombre</p>
+        </div>
+        <!-- <div class="tipo">
+            <h3 class="pokeTipo" id="pokeTipo">Tipo:</h3> 
+        </div>
+        <ul class="pokeStats">Estadísticas Base:
+            <li class="stat1" id="stat1">PS:</li>
+            <li class="stat2" id="stat2">Ataque:</li>
+            <li class="stat3" id="stat3">Defensa:</li>
+            <li class="stat4" id="stat4">Ataque especial:</li>
+            <li class="stat5" id="stat5">Defensa especial:</li>
+            <li class="stat6" id="stat6">Velocidad:</li>
+        </ul> -->
+        <input type="text" placeholder="Pikachu" id="pokeName" class="pokeInput" />
+        <div class="buttons">
+            <div class="buttons-left">
+                <button class="boton-fetch" onclick="fetchPokemon()"></button>
+                <img src="assets/logo.svg" alt="logo pokemon">
+            </div>
+            <div class="select">
+                <div class="btn-blue"></div>
+                <div class="btn-green"></div>
+            </div>
+            <img class="d-pad" src="assets/d-pad.svg" alt="directional pad">
+        </div>
+
+    </section>
 
 
     <script src="pokedex.js"></script>

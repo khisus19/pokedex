@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 878.5 744.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b3b3b3;
+      }
+
+      .cls-1, .cls-2, .cls-5, .cls-6 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #e3e3e3;
+      }
+
+      .cls-4 {
+        fill: url(#Degradado_sin_nombre_131);
+      }
+
+      .cls-5 {
+        fill: #d60033;
+        stroke-width: 3px;
+      }
+
+      .cls-6 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-width: 8px;
+      }
+    </style>
+    <radialGradient id="Degradado_sin_nombre_131" data-name="Degradado sin nombre 131" cx="192.21" cy="639.4" r="66.52" gradientUnits="userSpaceOnUse">
+      <stop offset="0.08" stop-color="#ff002a"/>
+      <stop offset="0.27" stop-color="#fd002a"/>
+      <stop offset="0.34" stop-color="#f6002c"/>
+      <stop offset="0.39" stop-color="#eb002e"/>
+      <stop offset="0.43" stop-color="#da0032"/>
+      <stop offset="0.43" stop-color="#d60033"/>
+    </radialGradient>
+  </defs>
+  <g id="Capa_2" data-name="Capa 2">
+    <g id="Capa_2-2" data-name="Capa 2">
+      <g>
+        <path class="cls-1" d="M844,14.48a30.39,30.39,0,0,0-7.68-1H32.67A30.15,30.15,0,0,0,2.5,43.63V608L139.23,744.5h697.1a30.12,30.12,0,0,0,30.17-30.13V43.63A30.17,30.17,0,0,0,844,14.48ZM833,614H62V42H833Z" transform="translate(0 -2.5)"/>
+        <rect class="cls-2" x="62" y="39.5" width="771" height="572"/>
+        <g>
+          <path class="cls-3" d="M146.54,728,22,603.46V32.5A27.54,27.54,0,0,1,49.5,5h799A27.54,27.54,0,0,1,876,32.5v668A27.51,27.51,0,0,1,848.5,728Zm-20-630A32.54,32.54,0,0,0,94,130.5v414A32.54,32.54,0,0,0,126.5,577h646A32.54,32.54,0,0,0,805,544.5v-414A32.54,32.54,0,0,0,772.5,98Z" transform="translate(0 -2.5)"/>
+          <path d="M848.5,7.5a25,25,0,0,1,25,25v668a25,25,0,0,1-25,25H147.57L24.5,602.43V32.5a25,25,0,0,1,25-25h799m-722,572h646a35,35,0,0,0,35-35v-414a35,35,0,0,0-35-35h-646a35,35,0,0,0-35,35v414a35,35,0,0,0,35,35m722-577H49.5a30,30,0,0,0-30,30v572l126,126h703a30,30,0,0,0,30-30V32.5a30,30,0,0,0-30-30Zm-722,572a30,30,0,0,1-30-30v-414a30,30,0,0,1,30-30h646a30,30,0,0,1,30,30v414a30,30,0,0,1-30,30Z" transform="translate(0 -2.5)"/>
+        </g>
+        <g>
+          <circle class="cls-4" cx="206.5" cy="655" r="42.5"/>
+          <path d="M206.5,616.5a41,41,0,1,1-41,41,41,41,0,0,1,41-41m0-3a44,44,0,1,0,44,44,44,44,0,0,0-44-44Z" transform="translate(0 -2.5)"/>
+        </g>
+        <g>
+          <circle class="cls-5" cx="404.5" cy="53" r="13.5"/>
+          <circle class="cls-5" cx="493.5" cy="53" r="13.5"/>
+        </g>
+        <line class="cls-6" x1="564.5" y1="618" x2="771.5" y2="618"/>
+        <line class="cls-6" x1="564.5" y1="644" x2="771.5" y2="644"/>
+        <line class="cls-6" x1="564.5" y1="670" x2="771.5" y2="670"/>
+        <line class="cls-6" x1="564.5" y1="696" x2="771.5" y2="696"/>
+      </g>
+    </g>
+  </g>
+</svg>

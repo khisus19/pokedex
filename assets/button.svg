@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139 139">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #040203;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        fill: #2c2c2c;
+      }
+    </style>
+  </defs>
+  <g id="Capa_2" data-name="Capa 2">
+    <g id="Capa_2-2" data-name="Capa 2">
+      <g>
+        <circle class="cls-1" cx="69.5" cy="69.5" r="67"/>
+        <circle class="cls-2" cx="75.5" cy="61.5" r="56"/>
+      </g>
+    </g>
+  </g>
+</svg>
