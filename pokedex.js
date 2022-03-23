@@ -29,6 +29,8 @@ function capitalizarPrimeraLetra(str) {
 const pokeImage = (url) => {
     const pokeImg = document.getElementById("pokeImg");
     pokeImg.src = url;
+    const pokeImg2 = document.getElementById("pantallitaImg");
+    pokeImg2.src = url;
 }
 // Función para cambiar la nombre:
 const pokeNombre = (pokemon) => {
