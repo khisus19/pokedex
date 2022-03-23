@@ -1,0 +1,14 @@
+.pokedex-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+.left-side-container {
+    width: 350px;
+    margin: 0;
+}
+.right-side-container {
+    width: 350px;
+}
