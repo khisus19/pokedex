@@ -50,7 +50,8 @@ const fetchPokemon = () => {
     fetch(url).then((res) => {
         // El siguiente if es para que en caso de ingresar un nombre que no esxiste el status no será igual a "200" por lo que cambiará a una imagen de error
         if (res.status != "200") {
-            console.log(res); //Esta es la respuesta que nos regresa el servidor
+            document.getElementById("pokeNumero").innerHTML = ``;
+            document.getElementById("pokeNombre").innerHTML = `No encontrado`;
             pokeImage("./assets/error.png")
         }
         // si el status = "200" estará bien y sigue con la devolución del json
@@ -68,10 +69,18 @@ const fetchPokemon = () => {
         let pokeTipo = data.types[0].type.name;
         let tipo = capitalizarPrimeraLetra(pokeTipo);
         
+        if (data.types.length == 2) {
+            let pokeTipo2 = data.types[1].type.name;
+            let tipo2 = capitalizarPrimeraLetra(pokeTipo2);
+            
+            document.getElementById("pokeTipo2").innerHTML = `${tipo2}`;
+        }
+        else document.getElementById("pokeTipo2").innerHTML = `-`;
 
         pokeNombre(pokeNbr);
         document.getElementById("pokeNumero").innerHTML = `<b>#${pokeId}<b/>`;
         document.getElementById("pokeTipo").innerHTML = `${tipo}`;
+        // document.getElementById("pokeTipo2").innerHTML = `${tipo2}`;
         
         let pokeStats = [data.stats[0].base_stat, data.stats[1].base_stat, data.stats[2].base_stat, data.stats[3].base_stat, data.stats[4].base_stat, data.stats[5].base_stat];
         document.getElementById("stat1").innerHTML = `${pokeStats[0]}`;
