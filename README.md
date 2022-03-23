@@ -1,5 +1,6 @@
 # Práctica CSS
 
+https://khisus19.github.io/pokedex/
 Que onda explorers!
 
 En esta semana vimos como usar JavaScript para hacer que nuestras aplicaciones web tomen vida.
