@@ -71,15 +71,15 @@ const fetchPokemon = () => {
 
         pokeNombre(pokeNbr);
         document.getElementById("pokeNumero").innerHTML = `<b>#${pokeId}<b/>`;
-        document.getElementById("pokeTipo").innerHTML = `Tipo: <b>${tipo}<b/>`;
+        document.getElementById("pokeTipo").innerHTML = `${tipo}`;
         
         let pokeStats = [data.stats[0].base_stat, data.stats[1].base_stat, data.stats[2].base_stat, data.stats[3].base_stat, data.stats[4].base_stat, data.stats[5].base_stat];
-        document.getElementById("stat1").innerHTML = `PS: ${pokeStats[0]}`;
-        document.getElementById("stat2").innerHTML = `Ataque: ${pokeStats[1]}`;
-        document.getElementById("stat3").innerHTML = `Defensa: ${pokeStats[2]}`;
-        document.getElementById("stat4").innerHTML = `Ataque especial: ${pokeStats[3]}`;
-        document.getElementById("stat5").innerHTML = `Defensa especial: ${pokeStats[4]}`;
-        document.getElementById("stat6").innerHTML = `Velocidad: ${pokeStats[5]}`;
+        document.getElementById("stat1").innerHTML = `${pokeStats[0]}`;
+        document.getElementById("stat2").innerHTML = `${pokeStats[1]}`;
+        document.getElementById("stat3").innerHTML = `${pokeStats[2]}`;
+        document.getElementById("stat4").innerHTML = `${pokeStats[3]}`;
+        document.getElementById("stat5").innerHTML = `${pokeStats[4]}`;
+        document.getElementById("stat6").innerHTML = `${pokeStats[5]}`;
 
         console.log(pokeStats);
         let movimientos = data.moves.map(mov => mov.move.name); 

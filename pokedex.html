@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Pokedex LaunchX</h1>
-    <section class="pokedex-container">
+    <section class="left-side-container">
         <div class="top">
             <p class="luz-azul"></p>
             <img src="assets/light-three.svg" alt="tres luces" class="luz-triple" id="luz-triple" />
@@ -25,17 +25,6 @@
             <p class="pokeNumero" id="pokeNumero">#Id: </p>
             <p class="pokeNombre" id="pokeNombre">Nombre</p>
         </div>
-        <!-- <div class="tipo">
-            <h3 class="pokeTipo" id="pokeTipo">Tipo:</h3> 
-        </div>
-        <ul class="pokeStats">Estadísticas Base:
-            <li class="stat1" id="stat1">PS:</li>
-            <li class="stat2" id="stat2">Ataque:</li>
-            <li class="stat3" id="stat3">Defensa:</li>
-            <li class="stat4" id="stat4">Ataque especial:</li>
-            <li class="stat5" id="stat5">Defensa especial:</li>
-            <li class="stat6" id="stat6">Velocidad:</li>
-        </ul> -->
         <input type="text" placeholder="Pikachu" id="pokeName" class="pokeInput" />
         <div class="buttons">
             <div class="buttons-left">
@@ -48,7 +37,43 @@
             </div>
             <img class="d-pad" src="assets/d-pad.svg" alt="directional pad">
         </div>
-
+    </section>
+    <section class="right-side-container">
+        <div class="notch">
+            <div class="camera"></div>
+            <div class="speaker"></div>
+        </div>
+        <div class="screen2">
+            <div class="tags">
+                <p class="stat-tag">Tipo:</p>
+                <p class="pokeTipo small-screen" id="pokeTipo"></p>
+            </div>
+            <div class="tags">
+                <p class="stat-tag">PS:</p>
+                <p class="stat1 small-screen" id="stat1"></p>
+            </div>
+            <div class="tags">
+                <p class="stat-tag">At:</p>
+                <p class="stat2 small-screen" id="stat2"></p>
+            </div>
+            <div class="tags">
+                <p class="stat-tag">Def:</p>
+                <p class="stat3 small-screen" id="stat3"></p>
+            </div>
+            <div class="tags">
+                <p class="stat-tag">At. Esp:</p>
+                <p class="stat4 small-screen" id="stat4"></p>
+            </div>
+            <div class="tags">
+                <p class="stat-tag">Df. Esp:</p>
+                <p class="stat5 small-screen" id="stat5"></p>
+            </div>
+            <div class="tags">
+                <p class="stat-tag">Veloc:</p>
+                <p class="stat6 small-screen" id="stat6"></p>
+            </div>
+            
+        </div>
     </section>
 
 

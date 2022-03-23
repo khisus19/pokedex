@@ -22,7 +22,9 @@ h1 {
     margin: 20px auto;
     text-align: center;
 }
-.pokedex-container {
+
+/* ---- LEFT SIDE ---- */
+.left-side-container {
     width: 80%;
     min-width: 300px;
     max-width: 420px;
@@ -34,7 +36,7 @@ h1 {
     justify-content: flex-start;
     align-items: center;
     background-color: var(--rose);
-    border: 5px solid --light-black;
+    border: 5px solid var(--light-black);
     border-radius: 20px;
 }
 .top {
@@ -97,12 +99,7 @@ h1 {
 .pokeNombre {
     margin-left: 10px;
 }
-.pokeTipo {
-    margin: 5px auto;
-}
-.pokeStats {
-    list-style: none;
-}
+
 
 .pokeInput {
     width: 250px;
@@ -162,4 +159,88 @@ h1 {
 .d-pad {
     width: 80px;
     height: 80px;
+}
+
+/* ---- RIGHT SIDE ---- */
+.right-side-container {
+    width: 80%;
+    min-width: 300px;
+    max-width: 420px;
+    margin: 10px auto;
+    padding: 5px 15px 5px;
+    min-height: 590px;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--rose);
+    border: 5px solid var(--light-black);
+    border-radius: 20px;
+}
+.notch {
+    width: 50%;
+    height: 20px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.camera {
+    width: 15px;
+    height: 15px;
+    background-color: var(--light-black);
+    border-radius: 50%;
+}
+.speaker {
+    width: 60px;
+    height: 10px;
+    background-color: var(--light-black);
+    border-radius: 10px;
+}
+.screen2 {
+    width: 96%;
+    max-width: 350px;
+    height: 450px;
+    margin: 10px 0;
+    color: var(--yellow);
+    border: 4px solid var(--light-black);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+}
+.screen2 .tags {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.screen2 .stat-tag {
+    font-weight: 700;
+    height: 50px;
+    width:100px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--dark-rose);
+    border-radius: 5px;
+}
+
+
+.small-screen {
+    width: 110px;
+    height: 50px;
+    color: var(--yellow);
+    background-color: var(--green);
+    border: 4px solid var(--light-black);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
