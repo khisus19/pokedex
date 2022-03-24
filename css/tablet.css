@@ -9,6 +9,13 @@
     width: 350px;
     margin: 0;
 }
+.center-container {
+    display: block;
+    height: 610px;
+}
+
 .right-side-container {
     width: 350px;
+    border-radius: 0 20px 20px;
+
 }
