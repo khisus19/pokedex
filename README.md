@@ -1,6 +1,21 @@
 # Práctica CSS
 
 https://khisus19.github.io/pokedex/
+
+### Link del repo
+https://github.com/khisus19/pokedex.git
+
+### Link del html
+https://github.com/khisus19/pokedex/blob/master/index.html
+
+### Link del JS
+https://github.com/khisus19/pokedex/blob/master/pokedex.js
+
+### Código en JS de la consulta al API
+
+### Link de despliegue
+https://khisus19.github.io/pokedex/
+
 Que onda explorers!
 
 En esta semana vimos como usar JavaScript para hacer que nuestras aplicaciones web tomen vida.
