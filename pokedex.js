@@ -54,7 +54,7 @@ const fetchPokemon = () => {
         if (res.status != "200") {
             document.getElementById("pokeNumero").innerHTML = ``;
             document.getElementById("pokeNombre").innerHTML = `No encontrado`;
-            pokeImage("./assets/error.png")
+            pokeImage("./assets/error.webp")
         }
         // si el status = "200" estará bien y sigue con la devolución del json
         else {
